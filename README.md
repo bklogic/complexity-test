@@ -10,7 +10,7 @@ The object is the same as the relational data set.
 
 ### Level 1 x 1, 
 
-The object is different from the relational data set but does not con-tain any array structure.  It object may include nested object structure vertically and horizontally. 
+The object is different from the relational data set but does not contain any array structure.  It may include nested object structure vertically and horizontally. 
 
 ### Level 1 x n
 
@@ -67,9 +67,34 @@ The object includes both vertically and horizontally nested array structures.
 }]
 ```
 
-## Test Levels
+## Test Conditions
+
+### Test Level
 
 - Level 1 x 5
 - Level 5 x 1, and
 - Level 5 x 5
 
+### Test Data Source
+
+PostgreSQL database.
+
+### Test Query
+
+```sql
+with recursive h as (
+    (select 1 as level from information_schema.views limit 1)
+     union all
+    (select h.level+1 from information_schema.views
+       join h on h.level < 8 
+      limit 1)
+),
+t as (
+  select row_number() over (order by 1) as rn from h
+)
+select 
+  (rn-1)/4+1 as id11, 
+  (rn-1)/2+1 as id22, (rn-1)/1+1 as id23,
+  (rn-1)/2+1 as id32, (rn-1)/1+1 as id33
+from t
+```
