@@ -1,6 +1,6 @@
 # Complexity Test
 
-Data access services for complexity test.
+Data access services for complexity test. It tests the capability of service engine to handle complex objects.
 
 ## Complexity Scale
 
@@ -14,7 +14,7 @@ The object is different from the relational data set but does not con-tain any a
 
 ### Level 1 x n
 
-The object includes nested array structure only vertically, as illustrated below:
+The object includes nested array structure only vertically:
 
 ```json
 {
@@ -31,7 +31,7 @@ The object includes nested array structure only vertically, as illustrated below
 
 ### Level n x 1
 
-The object includes nested array structure only horizontally, as shown in the following:
+The object includes nested array structure only horizontally:
 
 ```json
 {
@@ -46,6 +46,26 @@ The object includes nested array structure only horizontally, as shown in the fo
 
 The object includes both vertically and horizontally nested array structures.
 
+```json
+[{
+    "id11": 1,
+    "a2": [{
+                "id22": 1,
+                "b2": [{
+                    "id23": 1
+                      ...
+                }]
+          }],
+    "a3": [{
+                "id32": 1,
+                "b2": [{
+                    "id33": 1
+                      ...
+                }]
+          }]
+      ...
+}]
+```
 
 ## Test Levels
 
