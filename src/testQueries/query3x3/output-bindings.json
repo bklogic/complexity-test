@@ -1,0 +1,22 @@
+[
+    {
+        "field": "..id11",
+        "column": "id11"
+    },
+    {
+        "field": "..a2..id22",
+        "column": "id22"
+    },
+    {
+        "field": "..a2..b2..id23",
+        "column": "id23"
+    },
+    {
+        "field": "..a3..id32",
+        "column": "id32"
+    },
+    {
+        "field": "..a3..b2..id33",
+        "column": "id33"
+    }
+]

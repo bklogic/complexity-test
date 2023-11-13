@@ -1,0 +1,6 @@
+{
+    "specification": null,
+    "engine": "^service-engine-version^",
+    "deployer": "^service-deployer-version^",
+    "builder": "^project.version^"
+}

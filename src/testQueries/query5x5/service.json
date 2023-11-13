@@ -1,0 +1,11 @@
+{
+    "name": "query5x5",
+    "type": "query",
+    "description": "query service. Don't modify this file except the dynamic field!",
+    "input": "./input.json",
+    "output": "./output.json",
+    "query": "./query.sql",
+    "dynamic": false,
+    "inputBindings": "./input-bindings.json",
+    "outputBindings": "./output-bindings.json"
+}

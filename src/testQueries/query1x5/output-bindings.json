@@ -1,0 +1,22 @@
+[
+    {
+        "field": "..id1",
+        "column": "id1"
+    },
+    {
+        "field": "..a1..id2",
+        "column": "id2"
+    },
+    {
+        "field": "..a1..a2..id3",
+        "column": "id3"
+    },
+    {
+        "field": "..a1..a2..a3..id4",
+        "column": "id4"
+    },
+    {
+        "field": "..a1..a2..a3..a4..id5",
+        "column": "id5"
+    }
+]
