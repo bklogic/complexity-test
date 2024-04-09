@@ -2,6 +2,6 @@
     "name": "postgres",
     "description": "application. Specify data source and optionally schema name.",
     "dbType": "postgresql",
-    "dataSource": "avien",
-    "schema": "postgres"
+    "dataSource": "postgresdb",
+    "schema": "public"
 }
