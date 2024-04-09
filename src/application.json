@@ -1,5 +1,5 @@
 {
-    "name": "postgres",
+    "name": "complexity",
     "description": "application. Specify data source and optionally schema name.",
     "dbType": "postgresql",
     "dataSource": "postgresdb",
